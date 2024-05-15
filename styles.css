@@ -1,0 +1,176 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Alineación del texto centralizada */
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff4500;
+}
+
+.main-content {
+    padding: 20px 0;
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff4500;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e63900;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+.pricing-plan {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pricing-plan h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.pricing-plan p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.pricing-plan .btn {
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%; /* Ancho del pie de página al 100% */
+    position: fixed; /* Fija el pie de página en la parte inferior de la ventana */
+    bottom: 0; /* Alinea el pie de página en la parte inferior */
+    left: 0; /* Alinea el pie de página a la izquierda */
+    z-index: 9999; /* Asegura que el pie de página esté sobre otros elementos */
+}
+
+@media only screen and (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas */
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    .gallery img {
+        width: 150px;
+        margin: 5px;
+    }
+}
+
+
+
